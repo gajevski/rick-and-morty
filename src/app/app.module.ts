@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoMaterialModule } from './material-module';
 import { SharedModule } from './shared/shared.module';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     DemoMaterialModule,
     SharedModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
