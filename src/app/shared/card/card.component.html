@@ -1,4 +1,4 @@
-<mat-card class="character-card">
+<mat-card class="character-card" (click)="redirectToDetails(character.id)">
   <div fxLayout="row">
     <img class="card-image" [src]="character.image" alt="Rick and Morty TV series character">
     <div fxLayout="column" class="card-body">
