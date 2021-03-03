@@ -7,14 +7,17 @@ import { CharactersService } from './characters.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from '../shared/shared.module';
 import { ListingComponent } from './listing/listing.component';
+import { DetailsComponent } from './details/details.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
-  declarations: [ListingComponent],
+  declarations: [ListingComponent, DetailsComponent],
   imports: [
     CommonModule,
     CharactersRoutingModule,
     DemoMaterialModule,
     FlexLayoutModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   exports: [],
   providers: [CharactersService]
