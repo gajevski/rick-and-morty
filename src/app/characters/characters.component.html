@@ -1,3 +1,18 @@
-<div *ngIf="characters">
-<pre>{{characters | json}} </pre>
+<div *ngIf="characters" fxLayoutAlign="center center" fxLayout="row wrap" fxLayoutGap="10px" fxLayout.lt-md="column" class="wrapper">
+  <ng-container *ngFor="let character of characters">
+    <mat-card class="character-card">
+      <div fxLayout="row">
+        <img class="card-image" [src]="character.image" alt="Rick and Morty TV series character">
+        <div fxLayout="column" class="card-body">
+          <h2 class="card-title">{{ character.name }}</h2>
+          <div class="card-subtitle">{{ character.species }} - {{ character.status }}</div>
+          <div fxLayout="column" class="card-subtitle location-container">
+          <div class="location-title">Last known location: </div>
+          <div class="location-name">{{ character.location.name }}</div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+
+  </ng-container>
 </div>

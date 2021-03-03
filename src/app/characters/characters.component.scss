@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.wrapper {
+  background: rgb(32, 35, 41) none repeat scroll 0% 0%;
+  font-family: 'Architects Daughter', cursive !important;
+}
+
+.character-card {
+  margin: 10px;
+  padding: 0px;
+  background-color: rgb(60, 62, 68);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.card-image {
+  width: 220px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.card-body {
+  width: 370px;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 32px;
+}
+
+.card-subtitle {
+  font-size: 18px;
+}
+
+.location-container {
+  margin-top: 15px;
+}
+
+.location-name {
+  margin-top: 10px;
+}
+
+.location-title {
+  color: rgb(158, 158, 158);
+}

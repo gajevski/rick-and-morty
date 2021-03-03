@@ -5,14 +5,14 @@ import { CharactersRoutingModule } from './characters-routing.module';
 import { CharactersComponent } from './characters.component';
 import { DemoMaterialModule } from '../material-module';
 import { CharactersService } from './characters.service';
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [CharactersComponent],
   imports: [
     CommonModule,
     CharactersRoutingModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    FlexLayoutModule
   ],
   exports: [CharactersComponent],
   providers: [CharactersService]
