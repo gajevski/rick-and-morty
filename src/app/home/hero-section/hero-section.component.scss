@@ -1,0 +1,11 @@
+.wrapper {
+  height: calc(100vh - 64px);
+  background: url("https://i.imgur.com/ZR3ZngO.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 64px;
+  color: #fff;
+  line-height: 70px;
+}
