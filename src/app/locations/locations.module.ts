@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LocationsRoutingModule } from './locations-routing.module';
 import { LocationsComponent } from './locations.component';
 import { DemoMaterialModule } from '../material-module';
+import { LocationsService } from './locations.service';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { DemoMaterialModule } from '../material-module';
     CommonModule,
     LocationsRoutingModule,
     DemoMaterialModule
-  ]
+  ],
+  providers: [LocationsService]
 })
 export class LocationsModule { }

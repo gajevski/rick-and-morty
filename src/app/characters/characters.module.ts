@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CharactersRoutingModule } from './characters-routing.module';
 import { CharactersComponent } from './characters.component';
 import { DemoMaterialModule } from '../material-module';
+import { CharactersService } from './characters.service';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { DemoMaterialModule } from '../material-module';
     CharactersRoutingModule,
     DemoMaterialModule
   ],
-  exports: [CharactersComponent]
+  exports: [CharactersComponent],
+  providers: [CharactersService]
 })
 export class CharactersModule { }
