@@ -125,6 +125,10 @@
               "devServerTarget": "rick-and-morty:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

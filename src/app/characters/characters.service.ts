@@ -20,4 +20,14 @@ getAllCharacters(): Observable<Characters[]> {
       })
   );
 }
+
+getCharacterDetails(id: number): Observable<Characters> {
+  const url = `https://rickandmortyapi.com/api/character/${id}`;
+
+  return this.http.get(url).pipe(
+      map((response): Characters => {
+          return (response as any);
+      })
+  );
+}
 }
